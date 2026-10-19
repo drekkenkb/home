@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>drekkenkb</title>
+<meta name="description" content="Games and tools by drekkenkb, all free to use in your browser.">
+<meta name="theme-color" content="#14161c">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --bg: #14161c; --card: #1d2029; --card-hover: #252935; --border: #2c303c;
+    --text: #e9ebf1; --muted: #9aa0ae; --accent: #3fd6c4;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f5f6f8; --card: #ffffff; --card-hover: #eef0f4; --border: #dde0e6;
+      --text: #191b22; --muted: #5d6372; --accent: #148a7d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 48px max(16px, env(safe-area-inset-left));
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  header { padding: 32px 0 8px; }
+  h1 { margin: 0; font-size: 28px; letter-spacing: -0.01em; }
+  header p { margin: 4px 0 0; color: var(--muted); }
+  h2 {
+    margin: 32px 0 12px; font-size: 13px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--muted);
+  }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+  @media (max-width: 380px) { ul { grid-template-columns: 1fr; } }
+  a.app {
+    display: flex; gap: 14px; align-items: center; padding: 14px; height: 100%;
+    background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+    color: inherit; text-decoration: none; transition: background 0.15s, border-color 0.15s;
+  }
+  a.app:hover { background: var(--card-hover); }
+  a.app:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  a.app img { width: 52px; height: 52px; border-radius: 12px; flex: none; }
+  a.app strong { display: block; font-size: 17px; }
+  a.app span { display: block; color: var(--muted); font-size: 14px; line-height: 1.4; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>drekkenkb</h1>
+    <p>Games and tools that run in your browser. Add any of them to your home screen to use them like an app.</p>
+  </header>
+
+  <h2>Games</h2>
+  <ul>
+    <li><a class="app" href="../bastion/">
+      <img src="../bastion/icon.svg" alt="">
+      <div><strong>Last Bastion</strong><span>A roguelike tower defense game</span></div>
+    </a></li>
+    <li><a class="app" href="../loopline/">
+      <img src="../loopline/icon.svg" alt="">
+      <div><strong>Loopline</strong><span>Trace every line in one stroke and end where you started</span></div>
+    </a></li>
+  </ul>
+
+  <h2>Retro ROM tools</h2>
+  <ul>
+    <li><a class="app" href="../retroplay/">
+      <img src="../retroplay/icon.svg" alt="">
+      <div><strong>RetroPlay</strong><span>Play your own NES and Sega Master System ROMs</span></div>
+    </a></li>
+    <li><a class="app" href="../tilesmith/">
+      <img src="../tilesmith/icon.svg" alt="">
+      <div><strong>TileSmith</strong><span>View and edit the tile graphics inside your ROMs</span></div>
+    </a></li>
+    <li><a class="app" href="../musicsmith/">
+      <img src="../musicsmith/icon.svg" alt="">
+      <div><strong>MusicSmith</strong><span>Pull the music and sound effects out of your ROMs, edit them and put them back</span></div>
+    </a></li>
+  </ul>
+
+  <h2>Shooting</h2>
+  <ul>
+    <li><a class="app" href="../bullseye-scorer/">
+      <img src="../bullseye-scorer/icons/icon.svg" alt="">
+      <div><strong>Bullseye Scorer</strong><span>Score NRA 50 ft bullseye targets from a photo and track your progress</span></div>
+    </a></li>
+  </ul>
+
+  <footer>Everything runs on your device. Nothing you load is uploaded.</footer>
+</main>
+</body>
+</html>
